@@ -4,16 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"vite\"",
-    "server": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth",
+    "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@hookform/resolvers": "^3.9.0",
-    "antd": "^5.21.1",
-    "axios": "^1.7.2",
+    "@tanstack/react-query": "^5.59.6",
+    "antd": "^5.21.3",
+    "axios": "^1.7.7",
     "concurrently": "^8.2.2",
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0",
@@ -22,6 +23,7 @@
     "react-hook-form": "^7.52.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
+    "usehooks-ts": "^3.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
